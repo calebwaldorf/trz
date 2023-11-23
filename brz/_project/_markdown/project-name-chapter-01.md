@@ -1,5 +1,5 @@
 ---
-title: Project Name Chapter One
+title: Lipsum
 type: bodymatter
 ---
 
