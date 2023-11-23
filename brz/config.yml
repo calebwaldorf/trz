@@ -13,13 +13,13 @@ downloads: []
 ui_options:
   navigation:
     header_icons:
-      info: true
-      home: true
+      info: false
+      home: false
       downloads: true
       toc: true
     footer_icons:
       chapter: true
-      page: true
+      page: false
 private: false
 ignore: []
 autoprefixer_options:
