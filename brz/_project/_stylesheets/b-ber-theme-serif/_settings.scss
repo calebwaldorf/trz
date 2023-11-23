@@ -1,0 +1,45 @@
+// Variables
+
+// Colors
+$white: #fff !default;
+$black: #222 !default;
+$grey: #eee !default;
+$light-grey: #f2f2f2 !default;
+$info: #26a4b7 !default;
+$warning: #da4539 !default;
+$danger: #cd8d59 !default;
+$success: #5050c5 !default;
+
+// Set `$grey` in case of e-ink readers
+@if $build == 'mobi' {
+  $grey: $black;
+}
+
+// General text Layout
+// If new paragraphs should be indented, and if so, by how much. The text indent size
+// can be set to a simple relative unit (not calculated based on font size) because
+// it's only applied to paragraph elements, so will remain consistent throughout
+// the document
+$text-indent: true !default;
+$text-indent-size: two-ems(0) !default;
+
+// If paragraphs and header elements should have a margin bottom. Margin bottom size
+// is calculated automatically to retain vertial rhythm
+$vertical-space: false !default;
+
+// Vertical rhythm settings
+$font-size-base: 1.6em !default; // 16px
+$line-height-base: 1.44222 !default; // 20.8px
+
+// Font stacks
+$sans: Helvetica, Arial, sans-serif !default;
+$serif: Iowan, Georgia, Times, serif !default;
+$mono: Menlo, Osaka, Monaco, monospace !default;
+
+$font-family-base: $serif !default;
+
+// Inline image element dimensions as int, interpreted as ems
+$landscape-image-height: 4 !default;
+$square-image-height: 4 !default;
+$portrait-image-height: 5 !default;
+$portrait-image--high-height: 5 !default;
